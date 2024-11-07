@@ -1,0 +1,654 @@
+synthesis:  version Radiant Software (64-bit) 2024.1.0.34.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Nov  7 10:17:06 2024
+
+
+Command Line:  synthesis -f lab7proj_impl_1_lattice.synproj -logfile lab7proj_impl_1_lattice.srp -gui -msgset /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = aes.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = lab7proj_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-path /home/anonymousvikram/.lscc/ispfpga/ice40tp/data (searchpath added)
+-path /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj (searchpath added)
+-path /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/impl_1 (searchpath added)
+Mixed language design
+Verilog design file = /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v
+Verilog design file = /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv
+VHDL library = pmi
+VHDL design file = /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v. VERI-1482
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(1): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_addsub.v(40): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(2): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_add.v(50): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(3): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_complex_mult.v(52): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(4): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_counter.v(39): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(5): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_fifo.v(44): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(6): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_fifo_dc.v(47): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(7): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_mac.v(52): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(8): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(9): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_multaddsub.v(52): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(10): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_mult.v(51): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(11): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dp.v(48): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(12): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dq.v(45): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(13): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_rom.v(45): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(14): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_sub.v(50): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(15): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(16): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v(17): analyzing included file /home/anonymousvikram/.lscc/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv. VERI-1482
+Analyzing VHDL file /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.vhd. VHDL-1481
+Analyzing VHDL file /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.vhd
+
+INFO <35921014> - synthesis: /home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - synthesis: The default VHDL library search path is now "/home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): aes
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(6): compiling module aes. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(43): compiling module aes_spi. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(97): compiling module aes_core. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(300): compiling module KeyExpansion. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(530): compiling module sbox. VERI-1018
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(537): net sbox does not have a driver. VDB-1002
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(365): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(383): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(310): net rcon does not have a driver. VDB-1002
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(409): compiling module Input2State. VERI-1018
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(424): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(425): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(426): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(427): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(430): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(431): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(432): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(433): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(436): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(437): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(438): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(439): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(442): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(443): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(444): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(445): expression size 8 truncated to fit in target size 4. VERI-1209
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(455): compiling module State2Output. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(501): compiling module SubBytes. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(549): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(557): net sbox does not have a driver. VDB-1002
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(514): actual bit length 4 differs from formal bit length 8 for port a. VERI-1330
+WARNING <35901330> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(515): actual bit length 4 differs from formal bit length 8 for port y. VERI-1330
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(243): compiling module ShiftRows. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(574): compiling module mixcolumns. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(604): compiling module mixcolumn. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(645): compiling module galoismult. VERI-1018
+INFO <35901018> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(271): compiling module AddRoundKey. VERI-1018
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(277): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(278): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(279): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(280): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(281): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(282): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(283): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(284): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(285): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(286): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(287): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(288): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(289): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(290): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(291): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(292): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(184): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(208): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(209): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(210): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(211): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(212): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(213): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(214): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(215): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(216): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(217): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(218): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(219): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(220): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(221): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(222): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35901209> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(223): expression size 8 truncated to fit in target size 4. VERI-1209
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(128): net round_key[7][3][3] does not have a driver. VDB-1002
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING <35931038> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(310): ram rcon_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931038> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(537): ram sbox_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931038> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(557): ram sbox_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(120): net \core/shift_rows_out[7][3][3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(126): net \core/input_translated_state[7][3][3] does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: /home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv(127): net \core/next_state_data[7][3][3] does not have a driver. VDB-1002
+######## Missing driver on net \core/shift_rows_out[7][3][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][3][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][3][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][3][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][2][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][2][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][2][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][2][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][1][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][1][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][1][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][1][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][0][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][0][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][0][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[7][0][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][3][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][3][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][3][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][3][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][2][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][2][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][2][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][2][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][1][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][1][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][1][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][1][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][0][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][0][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][0][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[6][0][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][3][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][3][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][3][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][3][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][2][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][2][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][2][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][2][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][1][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][1][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][1][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][1][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][0][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][0][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][0][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[5][0][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][3][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][3][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][3][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][3][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][2][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][2][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][2][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][2][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][1][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][1][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][1][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][1][0]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][0][3]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][0][2]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][0][1]. Patching with GND.
+######## Missing driver on net \core/shift_rows_out[4][0][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][3][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][3][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][3][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][3][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][2][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][2][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][2][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][2][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][1][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][1][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][1][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][1][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][0][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][0][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][0][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[7][0][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][3][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][3][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][3][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][3][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][2][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][2][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][2][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][2][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][1][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][1][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][1][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][1][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][0][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][0][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][0][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[6][0][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][3][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][3][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][3][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][3][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][2][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][2][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][2][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][2][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][1][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][1][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][1][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][1][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][0][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][0][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][0][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[5][0][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][3][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][3][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][3][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][3][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][2][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][2][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][2][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][2][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][1][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][1][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][1][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][1][0]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][0][3]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][0][2]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][0][1]. Patching with GND.
+######## Missing driver on net \core/input_translated_state[4][0][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][3][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][3][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][3][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][3][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][2][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][2][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][2][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][2][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][1][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][1][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][1][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][1][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][0][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][0][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][0][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[7][0][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][3][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][3][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][3][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][3][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][2][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][2][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][2][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][2][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][1][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][1][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][1][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][1][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][0][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][0][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][0][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[6][0][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][3][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][3][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][3][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][3][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][2][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][2][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][2][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][2][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][1][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][1][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][1][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][1][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][0][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][0][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][0][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[5][0][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][3][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][3][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][3][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][3][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][2][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][2][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][2][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][2][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][1][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][1][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][1][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][1][0]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][0][3]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][0][2]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][0][1]. Patching with GND.
+######## Missing driver on net \core/next_state_data[4][0][0]. Patching with GND.
+######## Missing driver on net \core/round_key[7][2][3]. Patching with GND.
+######## Missing driver on net \core/round_key[7][2][2]. Patching with GND.
+######## Missing driver on net \core/round_key[7][2][1]. Patching with GND.
+######## Missing driver on net \core/round_key[7][2][0]. Patching with GND.
+######## Missing driver on net \core/round_key[7][0][3]. Patching with GND.
+######## Missing driver on net \core/round_key[7][0][2]. Patching with GND.
+######## Missing driver on net \core/round_key[7][0][1]. Patching with GND.
+######## Missing driver on net \core/round_key[7][0][0]. Patching with GND.
+######## Missing driver on net \core/round_key[6][2][3]. Patching with GND.
+######## Missing driver on net \core/round_key[6][2][2]. Patching with GND.
+######## Missing driver on net \core/round_key[6][2][1]. Patching with GND.
+######## Missing driver on net \core/round_key[6][2][0]. Patching with GND.
+######## Missing driver on net \core/round_key[6][0][3]. Patching with GND.
+######## Missing driver on net \core/round_key[6][0][2]. Patching with GND.
+######## Missing driver on net \core/round_key[6][0][1]. Patching with GND.
+######## Missing driver on net \core/round_key[6][0][0]. Patching with GND.
+######## Missing driver on net \core/round_key[5][2][3]. Patching with GND.
+######## Missing driver on net \core/round_key[5][2][2]. Patching with GND.
+######## Missing driver on net \core/round_key[5][2][1]. Patching with GND.
+######## Missing driver on net \core/round_key[5][2][0]. Patching with GND.
+######## Missing driver on net \core/round_key[5][0][3]. Patching with GND.
+######## Missing driver on net \core/round_key[5][0][2]. Patching with GND.
+######## Missing driver on net \core/round_key[5][0][1]. Patching with GND.
+######## Missing driver on net \core/round_key[5][0][0]. Patching with GND.
+######## Missing driver on net \core/round_key[4][2][3]. Patching with GND.
+######## Missing driver on net \core/round_key[4][2][2]. Patching with GND.
+######## Missing driver on net \core/round_key[4][2][1]. Patching with GND.
+######## Missing driver on net \core/round_key[4][2][0]. Patching with GND.
+######## Missing driver on net \core/round_key[4][0][3]. Patching with GND.
+######## Missing driver on net \core/round_key[4][0][2]. Patching with GND.
+######## Missing driver on net \core/round_key[4][0][1]. Patching with GND.
+######## Missing driver on net \core/round_key[4][0][0]. Patching with GND.
+INFO <35001774> - synthesis: Extracted state machine for register '\core/state' with one-hot encoding
+State machine has 5 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00001
+
+ 001 -> 00010
+
+ 010 -> 00100
+
+ 011 -> 01000
+
+ 100 -> 10000
+
+INFO <35001774> - synthesis: Extracted state machine for register '\core/round_count' with one-hot encoding
+State machine has 16 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+ 1101 
+
+ 1110 
+
+ 1111 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000000001
+
+ 0001 -> 0000000000000010
+
+ 0010 -> 0000000000000100
+
+ 0011 -> 0000000000001000
+
+ 0100 -> 0000000000010000
+
+ 0101 -> 0000000000100000
+
+ 0110 -> 0000000001000000
+
+ 0111 -> 0000000010000000
+
+ 1000 -> 0000000100000000
+
+ 1001 -> 0000001000000000
+
+ 1010 -> 0000010000000000
+
+ 1011 -> 0000100000000000
+
+ 1100 -> 0001000000000000
+
+ 1101 -> 0010000000000000
+
+ 1110 -> 0100000000000000
+
+ 1111 -> 1000000000000000
+
+
+
+
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[7][3][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[7][2][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[7][1][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[7][0][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[6][3][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[6][2][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[6][1][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[6][0][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[5][3][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[5][2][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[5][1][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[5][0][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[4][3][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[4][2][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[4][1][3:0] stuck at '0': 3, 2, 1, 0
+CRITICAL <35001747> - synthesis: Bit(s) of register driving \core/current_state[4][0][3:0] stuck at '0': 3, 2, 1, 0
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (aes)######################
+Number of register bits => 1929 of 5280 (36 % )
+EBR_B => 17
+FD1P3XZ => 1929
+IB => 4
+INV => 1
+IOL_B => 1
+LUT4 => 4625
+OB => 2
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 0
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 0
+  Net : sck_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : core/key_expansion/round_counter[0], loads : 1000
+  Net : core/key_expansion/maxfan_replicated_net_470, loads : 471
+  Net : core/key_expansion/round_counter[2], loads : 395
+  Net : core/key_expansion/round_counter[1], loads : 386
+  Net : core/key_expansion/n23691, loads : 384
+  Net : core/key_expansion/n23687, loads : 384
+  Net : core/key_expansion/n13301, loads : 350
+  Net : core/key_expansion/n231, loads : 275
+  Net : core/key_expansion/n5, loads : 257
+  Net : core/key_expansion/n23695, loads : 256
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+################### Begin DRC Report ######################
+Total number of design rule violations: 0
+###################  End DRC Report  ######################
+
+Peak Memory Usage: 381 MB
+
+--------------------------------------------------------------
+Total CPU Time: 13 secs 
+Total REAL Time: 13 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: d9a09a6b73290e079b1ba056bb14af80365d865d

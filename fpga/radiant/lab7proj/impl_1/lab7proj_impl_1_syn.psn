@@ -1,0 +1,20 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2024.1.0.34.2
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o lab7proj_impl_1_syn.udb -gui -msgset /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/promote.xml lab7proj_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'lab7proj_impl_1.vm' ...
+Removing unused logic ...
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+ 
+Writing output file 'lab7proj_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 255 MB
+Checksum -- postsyn: 7acc2901b7869e5a20009be1ed7fbca07174a8fa

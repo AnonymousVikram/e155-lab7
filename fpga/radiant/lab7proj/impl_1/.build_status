@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1731003592">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1731003592"/>
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1731003515">
+            <Task name="Map" build_result="2" update_result="0" update_time="1731003515"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1731003579">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1731003579"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1731003588"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1731003441">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1731003441"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1731003441"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1731001829"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1731001829"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0"/>
+        <Report name="lab7proj_impl_1.bgn" last_build_time="1731003592" last_build_size="1182"/>
+        <Report name="lab7proj_impl_1.bin" last_build_time="1731003592" last_build_size="104156"/>
+        <Report name="lab7proj_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="lab7proj_impl_1.twr.html" last_build_time="1731003588" last_build_size="12104"/>
+        <Report name="lab7proj_impl_1.udb" last_build_time="1731003579" last_build_size="641644"/>
+        <Report name="lab7proj_impl_1_map.udb" last_build_time="1731003514" last_build_size="299154"/>
+        <Report name="lab7proj_impl_1_rtl.udb" last_build_time="1731003432" last_build_size="270369"/>
+        <Report name="lab7proj_impl_1_syn.udb" last_build_time="1731003440" last_build_size="189849"/>
+    </Strategy>
+</BuildStatus>

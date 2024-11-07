@@ -1,0 +1,34 @@
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "lab7proj_impl_1.twr" "lab7proj_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt lab7proj_impl_1.twr lab7proj_impl_1.udb -gui -msgset /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: /home/anonymousvikram/.lscc/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  aes
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.26 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  1132  counted  18174  covered  0
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 8 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 291 MB
+
+ 8.870316s wall, 8.670000s user + 0.100000s system = 8.770000s CPU (98.9%)
+

@@ -92,7 +92,7 @@ endmodule
 //        [127:96]  [95:64] [63:32] [31:0]      w[0]    w[1]    w[2]    w[3]
 /////////////////////////////////////////////
 // Define the AES state type - 4x4 array of bytes
-typedef logic [7:0] aes_state_t[0:3][0:3];
+typedef logic [7:0][3:0][3:0] aes_state_t;
 
 module aes_core (
     input  logic         clk,
@@ -123,6 +123,7 @@ module aes_core (
 
   // State arrays
   aes_state_t current_state;
+  aes_state_t input_translated_state;
   aes_state_t next_state_data;
   aes_state_t round_key;
 
@@ -136,12 +137,12 @@ module aes_core (
       .load(load),
       .key(key),
       .done(key_expansion_done),
-      .round_keys(expanded_keys)
+      .roundKeys(expanded_keys)
   );
 
   Input2State plaintext_to_state (
       .in   (plaintext),     // Changed from .input to .in
-      .state(current_state)
+      .state(input_translated_state)
   );
 
   State2Output final_output (
@@ -157,19 +158,19 @@ module aes_core (
   );
 
   ShiftRows shift_rows (
-      .state_in (sub_bytes_out),
-      .state_out(shift_rows_out)
+      .state (sub_bytes_out),
+      .shifted(shift_rows_out)
   );
 
-  MixColumns mix_columns (
-      .state_in (shift_rows_out),
-      .state_out(mix_columns_out)
+  mixcolumns mix_columns (
+      .a (shift_rows_out),
+      .y(mix_columns_out)
   );
 
   AddRoundKey add_round_key (
-      .state_in (round_mux_out),
-      .round_key(round_key),
-      .state_out(next_state_data)
+      .state (round_mux_out),
+      .roundkey(round_key),
+      .result(next_state_data)
   );
 
   // State machine logic
@@ -185,7 +186,7 @@ module aes_core (
       else done <= 1'b0;
     end
 
-    current_state <= next_state_data;
+    current_state <= state == INIT ? input_translated_state : next_state_data;
   end
 
   // Next state logic

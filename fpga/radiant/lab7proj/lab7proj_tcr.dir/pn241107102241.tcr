@@ -1,0 +1,30 @@
+#Start recording tcl command: 11/7/2024 09:46:03
+#Project Location: /home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj; Project name: lab7proj
+prj_create -name "lab7proj" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_core_tb.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_sbox_tb.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_spi_tb.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/sbox.txt"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_remove_source "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_core_tb.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_sbox_tb.sv" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_spi_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_impl_opt -impl "impl_1" "top" "aes"
+prj_set_impl_opt -impl "impl_1" "VerilogStandard" "System Verilog"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+clear
+#Stop recording: 11/7/2024 10:22:41

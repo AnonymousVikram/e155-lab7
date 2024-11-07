@@ -1,0 +1,49 @@
+-a "iCE40UP"
+-p iCE40UP5K
+-t SG48
+-sp "High-Performance_1.2V"
+-frequency 200
+-optimization_goal Area
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Auto
+
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+
+
+-use_io_reg auto
+
+
+
+
+
+
+-use_io_insertion 1
+
+-resolve_mixed_drivers 0
+-path "/home/anonymousvikram/.lscc/ispfpga/ice40tp/data" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj/impl_1" "/home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj"
+-ver "/home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "/home/anonymousvikram/.lscc/ip/pmi/pmi_iCE40UP.vhd"
+-sver "/home/anonymousvikram/workspace/e155/work/lab7/fpga/src/aes_starter.sv"
+
+
+-path "/home/anonymousvikram/workspace/e155/work/lab7/fpga/radiant/lab7proj"
+-top aes
+-udb "lab7proj_impl_1_rtl.udb"
+-output_hdl "lab7proj_impl_1.vm"
+
